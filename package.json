@@ -1,0 +1,47 @@
+{
+  "name": "blobbattle-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@databases/(.*)$": "<rootDir>/src/databases/$1",
+      "^@models/(.*)$": "<rootDir>/src/models/$1",
+      "^@repositories/(.*)$": "<rootDir>/src/repositories/$1",
+      "^@services/(.*)$": "<rootDir>/src/services/$1",
+      "^@utils/(.*)$": "<rootDir>/src/utils/$1"
+    },
+    "setupFiles": [
+      "<rootDir>/tests/jest.setup.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js"
+    ]
+  },
+  "_moduleAliases": {
+    "@databases": "src/databases",
+    "@models": "src/models",
+    "@repositories": "src/repositories",
+    "@services": "src/services",
+    "@utils": "src/utils"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.474.0",
+    "@aws-sdk/lib-dynamodb": "^3.474.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "module-alias": "^2.2.3",
+    "redis": "^4.6.11",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "socket.io-client": "^4.7.2"
+  }
+}

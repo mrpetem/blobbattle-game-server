@@ -1,0 +1,45 @@
+├───src
+│   │   .env.development
+│   │   .env.production
+│   │   app.js
+│   │
+│   ├───databases
+│   │       dynamoDbInterface.js
+│   │       redisInterface.js
+│   │
+│   ├───models
+│   │       abilities.js
+│   │       game.js
+│   │       lobby.js
+│   │       player.js
+│   │
+│   ├───services
+│   │       gameServer.js
+│   │       gameService.js
+│   │       matchmakingService.js
+│   │       playerService.js
+│   │       socketService.js
+│   │
+│   └───utils
+│           banned-words.txt
+│
+└───tests
+    │   jest.setup.js
+    │
+    ├───databases
+    │       dynamoDbInterface.test.js
+    │       redisInterface.test.js
+    │
+    ├───end-to-end
+    │       matchmaking-simulation.test.js
+    │
+    ├───models
+    │       abilities.test.js
+    │       game.test.js
+    │       lobby.test.js
+    │       player.test.js
+    │
+    └───services
+            gameService.test.js
+            matchmakingService.test.js
+            playerService.test.js
